@@ -1,0 +1,31 @@
+
+
+<div class="container my-3">
+    <h4> ADD A TODO</h4>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Rodo Title</label>
+      <input type="text" class="form-control" id="title" placeholder="Title !" rows="3" [(ngModel)]="title" name="title">
+    </div>
+    <div class="desc">
+      <label for="text">Description</label>
+      <textarea class="form-control" id="desc" row="3" placeholder="Add Description here !" [(ngModel)]="desc" name="desc"></textarea>
+    </div>
+    
+ <!--   <div class="activation">
+      <label for="active">activation</label>
+      <select  class="form-control" id="exampleFormControlSelect2">
+        <option>Select</option>
+        <option>True</option>
+        <option>False</option>
+      </select>
+    </div>
+-->
+
+<br/>
+<button type="Submit" class="btn btn-primary">ADD</button>
+  </form>
+  
+</div>
+
+

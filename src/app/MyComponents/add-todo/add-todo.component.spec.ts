@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewcComponent } from './newc.component';
+import { AddTodoComponent } from './add-todo.component';
 
-describe('NewcComponent', () => {
-  let component: NewcComponent;
-  let fixture: ComponentFixture<NewcComponent>;
+describe('AddTodoComponent', () => {
+  let component: AddTodoComponent;
+  let fixture: ComponentFixture<AddTodoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ NewcComponent ]
+      declarations: [ AddTodoComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NewcComponent);
+    fixture = TestBed.createComponent(AddTodoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
