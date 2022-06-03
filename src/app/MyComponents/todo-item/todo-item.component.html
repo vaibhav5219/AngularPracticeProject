@@ -1,9 +1,8 @@
 <div class="my-3">
-    <h3 class="text-center mb-3">This is Todo-List by Vaibhav</h3>
     <h5 [ngClass]="{'strike':!todo.active}">{{todo.title}}</h5>
     <p [ngClass]="{'strike':!todo.active}">{{todo.desc}}</p>
     <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" onclick="onCheckBoxClick(todo)" [checked]="!todo.active">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" (click)="onCheckBoxClick(todo)" [checked]="!todo.active">
         <label class="form-check-label" for="defaultCheck1{{i}}">Done</label>
     </div>
     <button class="btn btn-sm btn-danger" (click)="onClick(todo)"> Delete</button>

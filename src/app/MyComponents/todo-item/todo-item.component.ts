@@ -26,4 +26,5 @@ export class TodoItemComponent implements OnInit {
   {
     this.todoCheckbox.emit(todo);
   }
+  
 }
